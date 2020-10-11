@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-8";
+const CACHE_NAME = "version-9";
 // const urlsToCache = ;
 
 const self = this;
