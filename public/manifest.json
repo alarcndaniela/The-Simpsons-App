@@ -9,7 +9,7 @@
       "purpose": "any maskable"
     }
   ],
-  "start_url": "./",
+  "start_url": "https://musing-lamport-1d1d8f.netlify.app/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
