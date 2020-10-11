@@ -78,21 +78,20 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .quote {
-      padding: 0px;
-      margin-top: 5rem;
-    }
-  
-    .character {
-      padding: 0px;
-    }
-  
-    .image {
-      align-self: flex-end;
-      margin: 0px;
-      width: 150px;
-      height: 150px;
-      object-fit: contain;
-    }
+  .quote {
+    padding: 0px;
+    margin-top: 5rem;
   }
-  
+
+  .character {
+    padding: 0px;
+  }
+
+  .image {
+    align-self: flex-end;
+    margin: 0px;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+}
