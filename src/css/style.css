@@ -58,10 +58,11 @@ body {
   color: #037dc4;
 }
 
-@media screen and (min-width: 200px) and (max-width: 500px) {
+@media screen and (min-width: 200px) and (max-width: 499px) {
   .quote {
     padding: 0px;
     margin-top: 5rem;
+    font-size: 18px;
   }
 
   .character {
