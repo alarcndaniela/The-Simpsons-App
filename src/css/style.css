@@ -80,13 +80,13 @@ body {
   .image {
     align-self: center;
     margin: 0px;
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 100%;
     object-fit: contain;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 799px) {
   .quote {
     padding: 0px;
     margin-top: 5rem;
@@ -105,7 +105,7 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 1023px) {
   .quote {
     padding: 0px;
     margin-top: 5rem;
