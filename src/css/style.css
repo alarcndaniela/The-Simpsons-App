@@ -59,21 +59,29 @@ body {
 }
 
 @media screen and (min-width: 200px) and (max-width: 499px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
   .quote {
     padding: 0px;
     margin-top: 5rem;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .character {
     padding: 0px;
+    font-size: 20px;
   }
 
   .image {
     align-self: flex-end;
     margin: 0px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
   }
 }
