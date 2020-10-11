@@ -65,7 +65,12 @@ body {
     margin-top: 5rem;
   }
 
+  .character {
+    padding: 0px;
+  }
+
   .image {
+    margin: 0px;
     width: 200px;
     object-fit: contain;
   }
