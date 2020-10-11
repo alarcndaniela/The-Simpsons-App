@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-9";
+const CACHE_NAME = "version-10";
 // const urlsToCache = ;
 
 const self = this;
@@ -11,7 +11,7 @@ self.addEventListener("install", (event) => {
       return cache.addAll([
         "index.html", 
         "offline.html",
-        "https://musing-lamport-1d1d8f.netlify.app/images/homero.png"]);
+        "images/homero.png"]);
     })
   );
 });
