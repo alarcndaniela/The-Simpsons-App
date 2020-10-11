@@ -80,8 +80,8 @@ body {
   .image {
     align-self: center;
     margin: 0px;
-    width: 300px;
-    height: 100%;
+    width: 150px;
+    height: 150;
     object-fit: contain;
   }
 }
