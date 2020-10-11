@@ -11,8 +11,7 @@ self.addEventListener("install", (event) => {
       return cache.addAll([
         "/index.html", 
         "/offline.html",
-        "/images/homero.png",
-        "/css/style.css"]);
+        "/images/homero.png"]);
     })
   );
 });
