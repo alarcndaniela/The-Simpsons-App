@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-3";
+const CACHE_NAME = "version-4";
 // const urlsToCache = ;
 
 const self = this;
@@ -11,6 +11,7 @@ self.addEventListener("install", (event) => {
       return cache.addAll([
         "/index.html", 
         "/offline.html",
+        "/css/style.css",
         "/images/homero.png"]);
     })
   );
