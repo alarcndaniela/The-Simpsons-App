@@ -58,25 +58,6 @@ body {
   color: #037dc4;
 }
 
-@media screen and (max-width: 200px) {
-  .quote {
-    padding: 0px;
-    margin-top: 5rem;
-  }
-
-  .character {
-    padding: 0px;
-  }
-
-  .image {
-    align-self: flex-end;
-    margin: 0px;
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .quote {
     padding: 0px;
