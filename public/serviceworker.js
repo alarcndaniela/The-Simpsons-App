@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-10";
+const CACHE_NAME = "version-11";
 // const urlsToCache = ;
 
 const self = this;
@@ -22,7 +22,7 @@ self.addEventListener("fetch", (event) => {
     caches.match(event.request)
     .then(() => {
       return fetch(event.request).catch(() => 
-      caches.match("offline.html"));
+      caches.match("offline.html"), caches.match("images/homero.png"));
     })
   );
 });
