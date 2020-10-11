@@ -1,14 +1,17 @@
 const CACHE_NAME = "version-1";
-const urlsToCache = ["/index.html", "/offline.html"," /images/logo.png"];
+// const urlsToCache = ;
 
 const self = this;
 
 // Install SW
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
+    caches.open(CACHE_NAME).then(function(cache) {
       console.log("Opened cache");
-      return cache.addAll(urlsToCache);
+      return cache.addAll([
+        "/index.html", 
+        "/offline.html",
+        "/images/logo.png"]);
     })
   );
 });
