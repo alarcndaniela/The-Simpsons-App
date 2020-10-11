@@ -1,29 +1,24 @@
 const CACHE_NAME = "version-1";
-const urlsToCache = ["index.html", "offline.html", "/images/homero.png"];
+const urlsToCache = ["/index.html", "/offline.html","/images/logo.png"];
 
 const self = this;
 
 // Install SW
-self.addEventListener("install", function(event) {
+self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-    .then(function(cache) {
+    caches.open(CACHE_NAME).then((cache) => {
       console.log("Opened cache");
 
-      cache.addAll([
-        "/index.html",
-        "/offline.html",
-        "/images/homero.png"]);
+      return cache.addAll(urlsToCache);
     })
   );
-  return self.clients.claim();
 });
 
 // Listen for requests
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request).then(() => {
-      return fetch(event.request).catch(() => caches.match("/offline.html", "/images/homero.png"));
+      return fetch(event.request).catch(() => caches.match("/offline.html"));
     })
   );
 });
