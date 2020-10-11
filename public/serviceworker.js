@@ -11,7 +11,7 @@ self.addEventListener("install", (event) => {
       return cache.addAll([
         "index.html", 
         "offline.html",
-        "images/homero.png"]);
+        "https://musing-lamport-1d1d8f.netlify.app/images/homero.png"]);
     })
   );
 });
