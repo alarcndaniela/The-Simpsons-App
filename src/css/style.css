@@ -60,10 +60,8 @@ body {
 
 @media screen and (max-width: 500px) {
   .quote {
-    padding-top: 100px;
-    padding-right: 200px;
+    padding: 0;
     font-size: 26px;
-    padding-left: 10px;
     margin-top: 5rem;
   }
 
