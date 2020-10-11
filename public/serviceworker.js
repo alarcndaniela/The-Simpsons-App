@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-13";
+const CACHE_NAME = "version-14";
 // const urlsToCache = ;
 
 const self = this;
@@ -11,7 +11,7 @@ self.addEventListener("install", (event) => {
       return cache.addAll([
         "index.html", 
         "offline.html",
-        "images/homero.png"]);
+        "images/homero.svg"]);
     })
   );
 });
@@ -23,15 +23,6 @@ self.addEventListener("fetch", (event) => {
     .then(() => {
       return fetch(event.request).catch(() => 
       caches.match("offline.html"));
-    })
-  );
-});
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request)
-    .then(() => {
-      return fetch(event.request).catch(() => 
-      caches.match("images/homero.png"));
     })
   );
 });
