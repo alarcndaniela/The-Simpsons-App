@@ -1,4 +1,4 @@
-const CACHE_NAME = "version-12";
+const CACHE_NAME = "version-13";
 // const urlsToCache = ;
 
 const self = this;
@@ -26,6 +26,15 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request)
+    .then(() => {
+      return fetch(event.request).catch(() => 
+      caches.match("images/homero.png"));
+    })
+  );
+});
 
 // Activate the SW
 self.addEventListener("activate", (event) => {
@@ -44,3 +53,4 @@ self.addEventListener("activate", (event) => {
     )
   );
 });
+
