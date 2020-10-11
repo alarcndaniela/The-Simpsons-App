@@ -71,7 +71,8 @@ body {
   .image {
     align-self: flex-end;
     margin: 0px;
-    width: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
   }
 }
