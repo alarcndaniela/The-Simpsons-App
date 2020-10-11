@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather App</title>
-        <style type="text/css">
-            html {
-                height: 100%;
-            }
-            body {
-                height: 100%;
-                margin: 0;
-                background: #0a1f44;
-                display: flex;
-                align-items: center;
-                text-align: center;
-                justify-content: center;
-            }
-        
-            .city {
-                align-items: center;
-                width: 80%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                padding: 40px 8%;
-                border-radius: 20px;
-                background: #fff;
-            }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Simpsons</title>
+    <style type="text/css">
+      html {
+        height: 100%;
+      }
+      body {
+        font-family: "Montserrat", sans-serif;
+        height: 100%;
+        margin: 0;
+        background: azure;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      }
 
-            .city-name {
-                font-size: 2em;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="city">
-            <h2 class="city-name">
-                <span>Please go online to check the current weather.</span>
-            </h2>
-        </div>
-    </body>
+      .offline-quote {
+        align-items: center;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px 8%;
+        background: azure;
+      }
+
+      .homero-quote {
+        color: #037dc4;
+      }
+    </style>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="offline-quote">
+      <h1 class="homero-quote">D'oh!</h1>
+      <img src="./images/homero.png" alt="homero" />
+      <h4 class="homero-quote">Internet connection required!</h4>
+    </div>
+  </body>
 </html>
