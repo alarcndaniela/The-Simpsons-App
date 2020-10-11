@@ -40,8 +40,6 @@ body {
 .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   height: 100vh;
 }
 
@@ -73,6 +71,15 @@ body {
     height: 100%;
   }
 
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+  }
+
   .quote {
     padding: 0px;
     margin-top: 5rem;
@@ -94,6 +101,15 @@ body {
 }
 
 @media screen and (min-width: 500px) and (max-width: 799px) {
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+  }
+
   .quote {
     padding: 0px;
     margin-top: 5rem;
@@ -113,6 +129,15 @@ body {
 }
 
 @media screen and (min-width: 800px) and (max-width: 1023px) {
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+  }
+
   .quote {
     padding: 0px;
     margin-top: 5rem;
