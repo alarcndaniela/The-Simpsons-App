@@ -70,7 +70,7 @@ body {
 
   .image {
     align-self: flex-end;
-    margin-right: 0px;
+    margin: 0px;
     width: 200px;
     object-fit: contain;
   }
