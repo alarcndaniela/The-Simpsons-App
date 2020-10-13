@@ -60,6 +60,22 @@ body {
   color: #037dc4;
 }
 
+.right p,
+.right .reload {
+	color: #037dc4;
+}
+
+.reload {
+	position: fixed;
+	top: 15px;
+	right: 15px;
+}
+
+.reload .fa-retweet {
+	font-size: 20px;
+}
+
+
 @media screen and (min-width: 200px) and (max-width: 499px) {
   .left,
   .right {

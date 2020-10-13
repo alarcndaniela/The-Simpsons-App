@@ -32,6 +32,9 @@ const App = () => {
       } `}
     >
       <div className={quote.characterDirection === "Right" ? "right" : "left"}>
+      <a className="reload " href="/">
+					<i className="fas fa-retweet "></i>
+				</a>
         <div className=" col-lg-12">
           <p
             className={`quote ${
